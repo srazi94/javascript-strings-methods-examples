@@ -5,7 +5,22 @@
     <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
   </head>
   <body>
-    <h1>Hello there!</h1>
-    <a href="/me.html">My other page</a>
+    <h1>String Method Examples</h1>
+    
+    <script>
+      (function checkStringMethods(){
+        let message = "welcome to myweb";
+        // console.log(`slice ${message.slice(0,7)}`);
+        // console.log(`substring ${message.substring(0,7)}`);
+        // console.log(`substr ${message.substr(0,12)}`);
+        let convertStrToArray = message.split(' ');
+        let convertArrayToStr1 = convertStrToArray.toString(' ');
+        let convertArrayToStr2 = convertStrToArray.join(' ');
+        console.log(convertStrToArray);
+        console.log(convertArrayToStr1);
+        console.log(convertArrayToStr2);
+        console.log(convertStrToArray.indexOf('myweb'));
+      }());
+    </script>
   </body>
 </html>
